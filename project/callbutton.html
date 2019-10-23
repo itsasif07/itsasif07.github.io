@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+        .outer{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        i{
+            color: white;
+        }
+        .call{
+            height: 100px;
+            width: 100px;;
+            background-color: green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .call:before{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+        }
+        .call:AFTER{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+            animation-delay: 0.4S;
+        }
+
+        @keyframes pulse {
+            0%{ transform: scale(0.5); opacity: 0; }
+            50%{  transform: scale(1); opacity: 1;}
+            100%{  transform: scale(1.4); opacity: 0;}
+        }
+
+        </style>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+          integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+     
+    <title>Animated Call Button</title>
+    <style>
+            *{
+                margin:0;
+                padding: 0;
+              
+            }
+        .outer{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        
+        }
+        i{
+            color: white;
+        }
+        .call{
+            height: 100px;
+            width: 100px;;
+            background-color: green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            /* visibility: hidden; */
+        }
+        .call:before{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+      
+        }
+        .call:AFTER{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+            animation-delay: 0.4S;
+        
+        }
+
+        @keyframes pulse {
+            0%{ transform: scale(0.5); opacity: 0; }
+            50%{  transform: scale(1); opacity: 1;}
+            100%{  transform: scale(1.4); opacity: 0;}
+            
+        }
+      
+        p,h1{
+          color: white;
+        }
+        </style>
+  </head>
+  <body>
+   
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+          <a href="/index.html" class="navbar-brand">
+            <img src="logo.png" width="40" height="40" alt="">Ankit's Projects
+          </a>
+      
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+      
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects
+                </a>
+                <div class="dropdown-menu">
+                  <a href="/project/callbutton.html" class="dropdown-item">Call Button Animation</a>
+                  <a href="/project/countdown.html" class="dropdown-item">CountDown Timer</a>
+                  <a href="/project/bouncingball.html" class="dropdown-item">Bouncing Ball Animation</a>
+                </div>
+              </li>
+      
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+          </div>
+        </nav>
+
+  <div class="container-fluid">
+      <div class="row">
+                <div class="outer col-sm-12 col-13">
+                    <!-- <p class="">Tap / Hover on Below text to lighten up</p> -->
+  
+                  <h1 class="my-5 text-center">Incoming Call Button Animation</h1>
+                  <div class="call mt-4">
+                  <i class="fas fa-phone fa-3x "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
